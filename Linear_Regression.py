@@ -14,6 +14,7 @@ b = torch.zeros(1, requires_grad=True)
 
 optimizer = optim.SGD([W, b], lr=0.01)
 
+#3000회 수행
 nb_epochs = 3000
 for epoch in range(nb_epochs + 1):
 
@@ -21,7 +22,7 @@ for epoch in range(nb_epochs + 1):
     
     cost = torch.mean((hypothesis - y_train) ** 2)
 
-    optimizer.zero_grad()
+    optimizer.zero_grad()   
     cost.backward()
     optimizer.step()
 
