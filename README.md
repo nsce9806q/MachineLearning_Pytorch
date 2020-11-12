@@ -1,1 +1,1 @@
-# MacineLearning_Pytorch
+# MachineLearning_Pytorch
